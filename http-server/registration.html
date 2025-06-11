@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Registration Page</title>
 </head>
 <body>
@@ -16,7 +18,17 @@
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required><br><br>
 
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label>
+      <input type="checkbox" name="terms" required>
+      I accept the terms and conditions
+    </label><br><br>
+
     <button type="submit">Register</button>
   </form>
+
+  <a href="/project">← Back to project</a>
 </body>
 </html>
