@@ -23,41 +23,28 @@
         <h2 class="text-3xl font-bold leading-tight text-center">Registration Form</h3>
             <div class="divide-y divide-gray-300/50">
                 <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
+                    <form id="registrationForm" action="/submit" method="post" class="space-y-4">
+                          <label for="name">Name</label>
+                          <input required type="text" id="name" name="name" placeholder="Enter your name" />
+                        
+                          <label for="email">Email</label>
+                          <input required type="email" id="email" name="email" placeholder="Enter your email" />
+                        
+                          <label for="password">Password</label>
+                          <input required type="password" id="password" name="password" placeholder="Enter password" />
+                        
+                          <label for="dob">Date of Birth</label>
+                          <input required type="date" id="dob" name="dob" />
+                        
+                          <div>
+                          <input type="checkbox" id="terms" name="terms" required />
+                          <label for="terms">I accept the terms and conditions</label>
+                          </div>
+                          <button type="submit">Register</button>
+                     </form>
 
-                    <form id="registrationForm" class="space-y-4">
 
-                        <label for="name"
-                            class="text-md w-40 inline-block font-medium leading-5 text-gray-700">Name</label>
-                        <input required type="text" id="name"
-                            class="bg-gray-100 inline-vlock rounded-lg shadow-md px-4 py-3 mb-5 tect-base leading-6 placeholder-gray-500"
-                            placeholder="enter the name"></br>
-
-                        <label for="email"
-                            class="text-md w-40 inline-block font-medium leading-5 text-gray-700">Email</label>
-                        <input required type="email" id="email"
-                            class="bg-gray-100 inline-vlock rounded-lg shadow-md px-4 py-3 mb-5 tect-base leading-6 placeholder-gray-500"
-                            placeholder="enter the email address" /></br>
-
-                        <label for="password"
-                            class="text-md w-40 inline-block font-medium leading-5 text-gray-700">Password</label>
-                        <input required type="password" id="password"
-                            class="bg-gray-100 inline-vlock rounded-lg shadow-md px-4 py-3 mb-5 tect-base leading-6 placeholder-gray-500"
-                            placeholder="enter the password" /></br>
-
-                        <label for="dob" class="text-md w-40 inline-block font-medium leading-5 text-gray-700">Date of
-                            Birth</label>
-                        <input required type="date" id="dob"
-                            class="bg-gray-100 inline-vlock rounded-lg shadow-md px-4 py-3 mb-5 tect-base leading-6 placeholder-gray-500" /></br>
-
-                        <div class="flex items-center">
-                            <input type="checkbox" id="terms" class="mr-2" required />
-                            <label for="terms">I accept the terms and conditions</label>
-                        </div>
-
-                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-                            Register
-                        </button>
-                    </form>
+                    
                 </div>
             </div>
     </div>
